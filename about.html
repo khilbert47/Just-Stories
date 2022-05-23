@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/favicon-tiyl.png" rel="shortcut icon">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normaliz/8.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+		<title>Podcast Full of Stories About Social Justice, Advocacy, and Service</title>
+		<script src="https://kit.fontawesome.com/1039cda917.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<div class="flex-box-container4">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><img class="updated-logo" src="images/js-logo-updated.png" alt="Just Stories Logo"></li>
+					<li><a href="podcast.html">Podcast</a></li>
+					<li><a class="scroll" onclick="menuToggle()" href="#connect">Connect</a></li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="center">
+			<img class="about-team-banner" src="images/about-team-banner.svg" alt="About The Just Stories Team">
+		</div>
+		<div class="group-photo">
+    	<img src="images/group-photo-stock.jpg" alt="Photo of Mark, Sheryl, and Jean together.">
+      	<p class="center">Photo of Mark, Sheryl, and Jean working on the podcast at Our Savior's Lutheran Church.</p>
+		</div>
+		<div class="faith">
+			<div class="center">
+				<img class="our-faith-banner" src="images/faith-banner.svg" alt="Our Faith">
+			</div>
+			<p class="center"><span class="what-is-words">We are sponsored by a church, and the hosts are people of Christian faith.</span>  Including faith in the stories and conversation is welcome, however, certainly not required.  We recognize that God works through many vehicles, including those of differing faith or of no faith.  So, <span class="what-is-words">faith will not be pushed by the hosts</span>, but it will not be avoided either.  Furthermore, the stories are the message.  We will do our best to stay out of the way of the story and let them stand on their own, with minimal analysis, interpretation or practical application directives.</p>
+		</div>
+		<div class="center">
+			<img class="click-photo-banner" src="images/click-photo-banner.svg" alt="Click each photo below to learn about the members of our team">
+		</div>
+		<div class="flex-box-container5">
+			<a class="scroll" onclick="menuToggle()" href="#mark-profile"><img class="about-images-single2" src="images/mark-cartoon.jpg" alt="Photo of Mark Smiling"></a>
+
+    		<a class="scroll" onclick="menuToggle()" href="#jean-profile"><img class="about-images-single2" src="images/Jean_Cartoon.jpg" alt="Photo of Jean with her dog."></a>
+		
+			<a class="scroll" onclick="menuToggle()" href="#sheryl-profile"><img class="about-images-single2" src="images/Sheryl_Cartoon.jpg" alt="Photo of Sheryl at work."></a>
+		</div>
+    	<div class="center" id="mark-profile">
+			<img class="mark-banner" src="images/mark-banner.svg" alt="Mark, Podcast Host">
+		</div>
+		<div class="flex-box-container2">
+				<img class="profile-photo" src="images/mark-photo2.jpg" alt="Photo of Mark Smiling">
+      			<p class="profile-blurbs">Blurb about this person and what they do and their hobbies and what they do for the podcast and their favorite color and they about their dogs or their children and their favorite episode so far and on and on and on and on and on and. Connect with Mark <a href="#"></a></p>
+		</div>
+    	<div class="center" id="jean-profile">
+			<img class="jean-banner" src="images/jean-banner.svg" alt="Jean, Podcast Host">
+		</div>
+		<div class="flex-box-container2">
+			<p class="profile-blurbs">Blurb about this person and what they do and their hobbies and what they do for the podcast and their favorite color and they about their dogs or their children and their favorite episode so far and on and on and on and on and on and. Connect with Jean <a href="#"></a></p>
+			<img class="profile-photo" src="images/jean-about-photo.jpg" alt="Photo of Jean Smiling">
+		</div>
+		<div class="center" id="sheryl-profile">
+			<img class="jean-banner" src="images/sheryl-banner.svg" alt="Sheryl, Production Manager">
+		</div>
+	<div class="flex-box-container2">
+			<img class="profile-photo" src="images/sheryl-about2.jpg" alt="Photo of Sheryl Smiling">
+			<p class="profile-blurbs">Blurb about this person and what they do and their hobbies and what they do for the podcast and their favorite color and they about their dogs or their children and their favorite episode so far and on and on and on and on and on and. Connect with Sheryl <a href="#"></a></p>
+	</div>
+	</main>
+	<footer>
+		<h2 class="center formh2">Have a story you want to share?</h2>
+			<form action="action_page.php">
+		  
+			  <label for="name">Name</label>
+			  <input type="text" id="name" name="name" placeholder="Your name..">
+		  
+			  <label for="email">Email</label>
+			  <input type="text" id="email" name="email" placeholder="Email..">
+		  
+			  <label for="message">Message</label>
+			  <textarea id="message" name="message" placeholder="Write something.." style="height:160px"></textarea>
+		  
+			  <input type="submit" value="Submit">
+		  
+			</form>
+		<p class="center">Copyright Kelly Hilbert 2021</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
