@@ -1,0 +1,606 @@
+/* Colors:
+Blue: #329cd2
+Red:  #ef303c
+Purple: #897eae
+Light Purple: #DBBBF5
+Green: #CADBC0*/
+
+/* Main Styling */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: white;
+  margin: 0;
+  /* background-image: linear-gradient(#4F94CD, #4F94CD, #9BC4E2, #C6E2FF);*/
+}
+
+.center {
+  text-align: center;
+}
+
+.formh2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 3em;
+  background-color: #4f94cd;
+  color: white;
+  margin: 0 40px 40px 40px;
+}
+
+/* Form Styling */
+input[type="text"],
+select,
+textarea {
+  font-family: "Inter", sans-serif;
+  width: 90%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  margin: 6px 20px 16px 20px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #c13584;
+  font-family: "Inter", sans-serif;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #4f94cd;
+}
+
+.stories {
+  color: #ef303c;
+  font-family: "Playfair Display", serif;
+}
+.stories2 {
+  color: #ef303c;
+}
+
+.just {
+  color: #329cd2;
+  font-family: "Playfair Display", serif;
+}
+
+/* Homepage Styling */
+.banner-image {
+  width: 100%;
+  display: block;
+  border-top-color: black;
+  border-top: 2px;
+  margin-bottom: 6%;
+}
+.what-is-banner {
+  padding: 50px 0 20px 0;
+  height: 300px;
+}
+
+.what-is {
+  max-width: 600px;
+  display: inline-block;
+  font-size: 1.2em;
+  margin-bottom: 10%;
+}
+
+.what-is-words {
+  color: #c13584;
+  font-style: italic;
+}
+
+main h2 {
+  margin-top: 75px;
+}
+
+/* Navigation Styling */
+header {
+  /* background-color: rgb(255, 250, 160);*/
+  background-color: white;
+  padding: 15px 0 0 0;
+  margin-top: 0;
+}
+
+.flex-box-container4 {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  justify-content: space-around;
+}
+
+.flex-box-container5 li {
+  margin: 0 40px;
+}
+
+.flex-box-container4 li {
+  margin: 0 40px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+}
+
+nav ul {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li:first-child {
+  padding-top: 2.1%;
+}
+
+nav ul li:nth-child(2) {
+  padding-top: 2.1%;
+}
+
+nav ul li:nth-child(4) {
+  padding-top: 2%;
+}
+
+nav ul li:nth-child(5) {
+  padding-top: 2.1%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: black;
+  /* color: rgb(105,105,105); */
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all ease-in-out 0.3s;
+}
+nav ul li a:hover {
+  box-shadow: 0px 4px 0px #99ddff;
+}
+
+#left {
+  position: absolute;
+  left: 20px;
+}
+
+#left a {
+  font-size: 1.5em;
+}
+
+#left a:hover {
+  box-shadow: none;
+}
+
+.bubble {
+  max-width: 30px;
+}
+
+.updated-logo {
+  max-width: 90px;
+}
+
+main {
+  margin-top: 8%;
+}
+
+/* Who-is homepage styling */
+.group-photo img {
+  max-width: 650px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.group-photo p {
+  margin-bottom: 80px;
+  font-size: 0.7em;
+}
+
+.about-images-single {
+  max-width: 200px;
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.73);
+}
+
+/* flex box container */
+.flex-box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-box-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.learn-more-button {
+  color: white;
+  background-color: #c13584;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  transition: all ease-in-out 250ms;
+  border: 1px solid #c13584;
+  padding: 10px 6px 10px 6px;
+  border-radius: 2px;
+}
+
+.learn-more-button:hover {
+  color: #c13584;
+  background-color: white;
+}
+
+.button-margin {
+  margin-top: 70px;
+  margin-bottom: 200px;
+}
+
+/* Individual Profile on about page styling */
+.flex-box-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.profile-blurbs {
+  position: initial;
+  max-width: 400px;
+  margin-top: 70px;
+}
+
+/* About page styling */
+
+.about-team-banner {
+  width: 40em;
+}
+
+.our-faith-banner {
+  max-height: 250px;
+}
+
+.faith p {
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 140px;
+  padding-bottom: 40px;
+}
+.faith {
+  margin-top: 75px;
+  padding-top: 20px;
+}
+
+.click-photo-banner {
+  width: 40em;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cartoon-image:hover,
+.cartoon-image:active,
+.cartoon-image:focus {
+  display: none;
+}
+
+.about-images-single3:hover {
+  box-shadow: 8px 8px 9px 0px rgba(50, 50, 50, 0.73);
+}
+
+.mark-banner {
+  width: 30em;
+  margin-top: 90px;
+}
+.jean-banner {
+  width: 30em;
+  margin-top: 60px;
+}
+
+.flex-box-container5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+.flex-box-container5 img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+.about-images-single2 {
+  max-width: 240px;
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.73);
+}
+
+.about-images-single2:hover {
+  opacity: 80%;
+  box-shadow: 8px 8px 9px 0px rgba(50, 50, 50, 0.73);
+}
+
+.profile-names p {
+  font-size: 1.4em;
+  font-variant: small-caps;
+}
+
+.profile-photo {
+  max-width: 350px;
+}
+
+#mark-profile {
+  margin-top: 150px;
+}
+
+/* Podcast page styling */
+.flex-box-container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-box-container3 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.flex-box-container3 img:hover {
+  filter: blur(1px);
+}
+
+.where-to-listen p {
+  display: block;
+  max-width: 700px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.listen-buttons {
+  font-style: italic;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #329cd2;
+  margin: 0 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: all ease-in-out 250ms;
+}
+
+.listen-buttons:hover {
+  background-color: #ffcfad;
+  color: #e51267;
+  text-decoration: underline;
+}
+
+/** .listen-button2 {
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #329cd2;
+  background-color: white;
+  color: #db4437;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: all ease-in-out 250ms;
+}
+
+.listen-button2:hover {
+  background-color: #cadbc0;
+  color: white;
+  text-decoration: underline;
+}
+
+.listen-button3 {
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #329cd2;
+  background-color: white;
+  color: #872ec4;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: all ease-in-out 250ms;
+}
+
+.listen-button3:hover {
+  background-color: #cadbc0;
+  color: white;
+  text-decoration: underline;
+}
+
+.listen-button4 {
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #329cd2;
+  background-color: white;
+  color: #00a0ee;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: all ease-in-out 250ms;
+}
+
+.listen-button4:hover {
+  background-color: #cadbc0;
+  color: white;
+  text-decoration: underline;
+}
+**/
+#listen h2 {
+  /* margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 100px; */
+  text-align: center;
+}
+.listen-banner {
+  width: 30em;
+  padding: 10px 0 0px 0;
+}
+
+.library-banner {
+  width: 25em;
+  padding: 10px 0 0px 0;
+  margin-top: 90px;
+}
+
+.library-episodes {
+  border: 1px #7d7d7d solid;
+  background-color: #e8e8e8;
+  max-height: 400px;
+  max-width: 1000px;
+  overflow: scroll;
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 200px;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-top: 25px;
+}
+
+.episode-library-photo {
+  border-radius: 20%;
+  margin-left: 20px;
+  margin-right: 50px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+#episode-library p {
+  color: #5e5e5e;
+}
+
+.episode-title {
+  font-weight: bold;
+}
+.listen-here-library {
+  font-style: italic;
+  color: #00a0ee;
+}
+
+.episode-library-link {
+  color: #00a0ee;
+}
+.episode-library-link:hover {
+  color: #c13584;
+}
+
+.flex-box-container6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+
+.flex-box-container6 li {
+  margin: 0 40px;
+}
+
+.line-break {
+  color: white;
+  border: 1px dashed #000;
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*Connect Page Styling*/
+.connect-button1 {
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #329cd2;
+  background-color: white;
+  color: #3b5998;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: all ease-in-out 250ms;
+}
+.connect-button1:hover {
+  background-color: #cadbc0;
+  color: white;
+  text-decoration: underline;
+}
+
+.connect-button2 {
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #329cd2;
+  background-color: white;
+  color: #c13584;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: all ease-in-out 250ms;
+}
+.connect-button2:hover {
+  background-color: #cadbc0;
+  color: white;
+  text-decoration: underline;
+}
+
+#facebook-comments h2 {
+  text-align: center;
+}
